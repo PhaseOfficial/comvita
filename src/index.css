@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --primary: #202f38;
+  --secondary: #735c00;
+  --surface: #fefccf;
+  --on-surface: #1d1d03;
+  --on-surface-variant: #43474b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-surface text-on-surface font-body overflow-x-hidden;
+  min-height: 100dvh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom selection color */
+::selection {
+  @apply bg-secondary text-on-secondary;
+}
+
+/* Comvita Design System Utilities */
+
+.glass-morphism {
+  @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-2xl;
+}
+
+.glass-morphism-dark {
+  @apply bg-primary/70 backdrop-blur-xl border border-white/10 shadow-2xl;
+}
+
+.ambient-shadow {
+  box-shadow: 0 40px 100px -20px rgba(32, 47, 56, 0.08);
+}
+
+.architectural-grid {
+  background-image: radial-gradient(var(--primary) 0.5px, transparent 0.5px);
+  background-size: 40px 40px;
+  opacity: 0.03;
+}
+
+/* Animation Utilities */
+.hover-lift {
+  @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl;
+}
+
+/* Typography Utility Classes */
+.font-serif-italic {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.tracking-boutique {
+  letter-spacing: 0.3em;
+}
+
