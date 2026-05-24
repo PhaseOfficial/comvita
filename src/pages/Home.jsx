@@ -1,8 +1,8 @@
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
-import Certification from "../components/home/Certification";
-import BrandStory from "../components/home/BrandStory";
-import TrustBanner from "../components/home/TrustBanner";
+import About from "../components/home/Certification";
+import Philosophy from "../components/home/BrandStory";
+import WhyChooseUs from "../components/home/TrustBanner";
 import Gallery from "../components/home/Gallery";
 import Testimonials from "../components/home/Testimonials";
 import HomeCTA from "../components/home/HomeCTA";
@@ -12,11 +12,11 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <Certification />
+      <About />
       <Services />
+      <WhyChooseUs />
+      <Philosophy />
       <Gallery />
-      <BrandStory />
-      <TrustBanner />
       <Testimonials />
       <HomeCTA />
     </Layout>

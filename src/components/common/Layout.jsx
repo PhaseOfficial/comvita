@@ -1,14 +1,13 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import CookieConsent from "../Cookies";
-import BuilderAesthetic from "./BuilderAesthetic";
+import ArtisticBackground from "./ArtisticBackground";
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-background min-h-screen font-body-md selection:bg-primary selection:text-white relative">
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.05] bg-gradient-to-tr from-secondary to-transparent"></div>
-      
-      <BuilderAesthetic />
+    <div className="bg-surface min-h-screen font-body selection:bg-secondary selection:text-on-secondary relative">
+      {/* Global Background Layer */}
+      <ArtisticBackground />
       
       <Header />
       
@@ -23,3 +22,4 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
